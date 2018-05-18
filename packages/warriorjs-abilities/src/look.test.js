@@ -24,10 +24,10 @@ describe('look', () => {
   describe('performing', () => {
     beforeEach(() => {
       unit.getSpaceAt
-        .mockReturnValueOnce({ toPlayerObject: () => 'space1' })
-        .mockReturnValueOnce({ toPlayerObject: () => 'space2' })
-        .mockReturnValueOnce({ toPlayerObject: () => 'space3' })
-        .mockReturnValueOnce({ toPlayerObject: () => 'space4' });
+        .mockReturnValueOnce({ asSensedBy: () => 'space1' })
+        .mockReturnValueOnce({ asSensedBy: () => 'space2' })
+        .mockReturnValueOnce({ asSensedBy: () => 'space3' })
+        .mockReturnValueOnce({ asSensedBy: () => 'space4' });
     });
 
     test('looks forward by default', () => {
